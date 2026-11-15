@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMetric</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>LeetMetric</h1>
+        </header>
+
+        <section class="user-container">
+            <label for="user-input">Enter your LeetCode username:</label>
+            <div class="user-input-container">
+                <input type="text" id="user-input" placeholder="Enter LeetCode Username" autocomplete="off">
+                <button id="search-btn">Search</button>
+            </div>
+        </section>
+
+        <section class="stats-container">
+
+            <div class="progress">
+                <div class="progress-item">
+                    <div class="easy-progress circle">
+                        <span id="easy-label"></span>
+                        <p>Easy</p>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="medium-progress circle">
+                        <span id="medium-label"></span>
+                        <p>Medium</p>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="hard-progress circle">
+                        <span id="hard-label"></span>
+                        <p>Hard</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXISTING CARD SECTION -->
+            <div class="stat-card">
+                <!-- dynamic content from JS -->
+            </div>
+
+            <!-- =============================== -->
+            <!-- NEW ACCEPTANCE RATE SECTION -->
+            <!-- =============================== -->
+            <div class="acceptance-rate-container">
+                <label class="para">
+                    <p>Acceptance Rate:</p>
+                </label>
+
+                <div class="acceptance-bar">
+                    <div id="acceptance-rate-bar" class="acceptance-rate-fill">
+                        <span id="acceptance-rate-label"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =============================== -->
+            <!-- NEW GLOBAL RANKING CARD -->
+            <!-- =============================== -->
+            <div class="ranking-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-ranking-star"></i>
+                </div>
+
+                <div class="ranking-info">
+                    <span id="global-ranking"></span>
+                </div>
+            </div>
+
+            <!-- =============================== -->
+            <!-- SUBMISSION CALENDAR SECTION -->
+            <!-- =============================== -->
+            <section id="submission-calendar">
+                <div class="calendar-grid"></div>
+            </section>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
